@@ -11,7 +11,7 @@ public class ExternalInventory {
     /**
      * An ItemDTO array with dummy data for simulation purposes.
      */
-    ItemDTO[] items = new ItemDTO[] {
+    private ItemDTO[] items = new ItemDTO[] {
         new ItemDTO("1", "Milk", "Low-fat organic pasteurized whole milk", 25.90, 0.06), new ItemDTO("2", "Flour", "Organic all purpose flour", 36.50, 0.06),
         new ItemDTO("3", "Eggs", "Free-range large brown eggs", 48.90, 0.06), new ItemDTO("4", "Potatoes", "Fresh Idaho potatoes", 12.39, 0.06),
         new ItemDTO("5", "Carrots", "Fresh whole carrots", 21.90, 0.06), new ItemDTO("6", "Chicken", "Locally produced boneless chicken breasts", 44.50, 0.06),

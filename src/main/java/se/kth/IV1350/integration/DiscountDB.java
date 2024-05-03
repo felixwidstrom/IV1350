@@ -11,7 +11,7 @@ public class DiscountDB {
     /**
      * Hash map for storing customer id's and discount amounts.
      */
-    Map<String, Double> customers = new HashMap<String, Double>();
+    private Map<String, Double> customers = new HashMap<String, Double>();
 
     /**
      * Constructor for DiscountDB.

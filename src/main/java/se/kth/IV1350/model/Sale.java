@@ -14,13 +14,13 @@ public class Sale {
     /**
      * Object and variable declarations for internal storage of sale information.
      */
-    Map<ItemDTO, Integer> itemMap = new HashMap<>();
-    double totalAmount;
-    double vat;
-    double discount;
-    double paymentAmount;
-    double change;
-    LocalDateTime saleTime;
+    private Map<ItemDTO, Integer> itemMap = new HashMap<>();
+    private double totalAmount;
+    private double vat;
+    private double discount;
+    private double paymentAmount;
+    private double change;
+    private LocalDateTime saleTime;
 
     /**
      * Constuctor for Sale.

@@ -14,11 +14,11 @@ public class View {
     /**
      * Object and variable declarations.
      */
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
-    Controller con;
+    private Controller con;
 
-    String customerId;
+    private String customerId;
 
     /**
      * Constructor for View.

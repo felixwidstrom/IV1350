@@ -15,10 +15,10 @@ public class Controller {
     /**
      * Object declarations.
      */
-    ExternalInventory eis;
-    ExternalAccounting eas;
-    DiscountDB ddb;
-    Printer printer;
+    private ExternalInventory eis;
+    private ExternalAccounting eas;
+    private DiscountDB ddb;
+    private Printer printer;
     Receipt receipt;
     Sale sale;
 

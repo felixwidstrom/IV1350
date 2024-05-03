@@ -7,11 +7,11 @@ public class ItemDTO {
     /**
      * Variable declarations for storing item information.
      */
-    String itemId;
-    String name;
-    String description;
-    double price;
-    double vat;
+    private String itemId;
+    private String name;
+    private String description;
+    private double price;
+    private double vat;
 
     /**
      * Constructor for ItemDTO.
