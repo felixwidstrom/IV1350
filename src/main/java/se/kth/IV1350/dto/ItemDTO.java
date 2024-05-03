@@ -1,4 +1,4 @@
-package main.java.se.kth.IV1350.dto;
+package se.kth.IV1350.dto;
 
 /**
  * A class for conviniently storing item information.

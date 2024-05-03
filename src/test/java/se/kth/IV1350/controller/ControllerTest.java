@@ -1,13 +1,13 @@
-package test.java.se.kth.IV1350.controller;
+package se.kth.IV1350.controller;
 
 import org.junit.*;
 import static org.junit.Assert.*;
 
-import test.java.se.kth.IV1350.dto.ItemDTO;
-import test.java.se.kth.IV1350.integration.DiscountDB;
-import test.java.se.kth.IV1350.integration.ExternalAccounting;
-import test.java.se.kth.IV1350.integration.ExternalInventory;
-import test.java.se.kth.IV1350.integration.Printer;
+import se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.integration.DiscountDB;
+import se.kth.IV1350.integration.ExternalAccounting;
+import se.kth.IV1350.integration.ExternalInventory;
+import se.kth.IV1350.integration.Printer;
 
 public class ControllerTest {
     Controller con;

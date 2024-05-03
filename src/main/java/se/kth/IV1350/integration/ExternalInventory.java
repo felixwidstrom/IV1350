@@ -1,8 +1,8 @@
-package main.java.se.kth.IV1350.integration;
+package se.kth.IV1350.integration;
 
 import java.util.Map;
 
-import main.java.se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.ItemDTO;
 
 /**
  * A class responsible for simulating the external inventory system.

@@ -1,11 +1,11 @@
-package test.java.se.kth.IV1350.integration;
+package se.kth.IV1350.integration;
 
 import java.util.*;
 
 import org.junit.*;
 import static org.junit.Assert.*;
 
-import test.java.se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.ItemDTO;
 
 public class DiscountDBTest {
     DiscountDB ddb;

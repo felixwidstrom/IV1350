@@ -1,9 +1,9 @@
-package test.java.se.kth.IV1350.model;
+package se.kth.IV1350.model;
 
 import org.junit.*;
 import static org.junit.Assert.*;
 
-import test.java.se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.ItemDTO;
 
 public class ReceiptTest {
     Receipt receipt;

@@ -1,12 +1,12 @@
-package main.java.se.kth.IV1350.controller;
+package se.kth.IV1350.controller;
 
-import main.java.se.kth.IV1350.dto.ItemDTO;
-import main.java.se.kth.IV1350.integration.DiscountDB;
-import main.java.se.kth.IV1350.integration.ExternalAccounting;
-import main.java.se.kth.IV1350.integration.ExternalInventory;
-import main.java.se.kth.IV1350.integration.Printer;
-import main.java.se.kth.IV1350.model.Receipt;
-import main.java.se.kth.IV1350.model.Sale;
+import se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.integration.DiscountDB;
+import se.kth.IV1350.integration.ExternalAccounting;
+import se.kth.IV1350.integration.ExternalInventory;
+import se.kth.IV1350.integration.Printer;
+import se.kth.IV1350.model.Receipt;
+import se.kth.IV1350.model.Sale;
 
 /**
  * A class responsible for communication between the model, integration and view layers.

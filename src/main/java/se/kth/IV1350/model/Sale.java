@@ -1,11 +1,11 @@
-package main.java.se.kth.IV1350.model;
+package se.kth.IV1350.model;
 
 import java.util.Map;
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 
-import main.java.se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.ItemDTO;
 
 /**
  * A class responsible for handling a sale by storing and operating on sale information.

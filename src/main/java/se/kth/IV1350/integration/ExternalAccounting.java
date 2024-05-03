@@ -1,4 +1,4 @@
-package main.java.se.kth.IV1350.integration;
+package se.kth.IV1350.integration;
 
 /**
  * A class responsible for simulating the external accounting system.

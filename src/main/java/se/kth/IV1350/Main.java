@@ -1,10 +1,10 @@
-package main.java.se.kth.IV1350;
-import main.java.se.kth.IV1350.controller.Controller;
-import main.java.se.kth.IV1350.integration.DiscountDB;
-import main.java.se.kth.IV1350.integration.ExternalAccounting;
-import main.java.se.kth.IV1350.integration.ExternalInventory;
-import main.java.se.kth.IV1350.integration.Printer;
-import main.java.se.kth.IV1350.view.View;
+package se.kth.IV1350;
+import se.kth.IV1350.controller.Controller;
+import se.kth.IV1350.integration.DiscountDB;
+import se.kth.IV1350.integration.ExternalAccounting;
+import se.kth.IV1350.integration.ExternalInventory;
+import se.kth.IV1350.integration.Printer;
+import se.kth.IV1350.view.View;
 
 /** 
  * Main class resonsible for starting the program. Entry point for the program. 

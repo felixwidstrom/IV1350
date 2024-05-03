@@ -1,11 +1,11 @@
-package main.java.se.kth.IV1350.view;
+package se.kth.IV1350.view;
 
 import java.time.*;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
-import main.java.se.kth.IV1350.controller.Controller;
-import main.java.se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.controller.Controller;
+import se.kth.IV1350.dto.ItemDTO;
 
 /**
  * A class responsible for displaying and reading information to/from the user.
