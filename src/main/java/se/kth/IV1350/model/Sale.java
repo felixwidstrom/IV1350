@@ -6,6 +6,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 
 import se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.SaleDTO;
 
 /**
  * A class responsible for handling a sale by storing and operating on sale information.
@@ -31,10 +32,10 @@ public class Sale {
 
     /**
      * Getter for item map.
-     * @return a hash map containing items and their information.
+     * @return a sale dto containing items and their information.
      */
-    public Map<ItemDTO, Integer> getItems() {
-        return itemMap;
+    public SaleDTO getSaleItems() {
+        return new SaleDTO(itemMap);
     }
 
     /**
@@ -91,6 +92,10 @@ public class Sale {
      * @param count an integer representing the count of the given item.
      */
     public void addItem(ItemDTO item, int count) {
+        if (item == null) {
+            return;
+        }
+
         for (Map.Entry<ItemDTO, Integer> entry : itemMap.entrySet()) {
             if (entry.getKey().getItemId().equals(item.getItemId())) {
                 entry.setValue(entry.getValue() + count);

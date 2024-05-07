@@ -2,7 +2,7 @@ package se.kth.IV1350.integration;
 
 import java.util.*;
 
-import se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.SaleDTO;
 
 /**
  * A class responsible for simulating a discount database.
@@ -26,7 +26,7 @@ public class DiscountDB {
      * @param itemMap a hash map containing items and their information. (Currently not in use).
      * @return a double representing a discount amount.
      */
-    public double getDiscount(String customerId, Map<ItemDTO, Integer> itemMap) {
+    public double getDiscount(String customerId, SaleDTO saleItems) {
         return customers.get(customerId) != null ? customers.get(customerId) : 0;
     }
 }

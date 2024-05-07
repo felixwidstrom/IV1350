@@ -60,10 +60,6 @@ public class Controller {
      */
     public ItemDTO scanItem(String itemId, int count) {
         ItemDTO item = eis.getItem(itemId);
-        if (item == null) {
-            System.out.println("\nInvalid item id...\n");
-            return null;
-        }
         sale.addItem(item, count);
         return item;
     }
@@ -74,7 +70,7 @@ public class Controller {
      * @return a double representing the discount amount. 
      */
     public double startDiscount(String customerId) {
-        double discount = ddb.getDiscount(customerId, sale.getItems());
+        double discount = ddb.getDiscount(customerId, sale.getSaleItems());
         sale.setDiscount(discount);
         return discount;
     }
@@ -89,7 +85,7 @@ public class Controller {
         sale.setPaymentAmount(amount);
         String r = receipt.getReceipt(sale);
         printer.print(r);
-        eis.update(sale.getItems());
+        eis.update(sale.getSaleItems());
         eas.update(sale.getTotalAmount());
         return r;
     }

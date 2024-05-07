@@ -19,7 +19,7 @@ public class Receipt {
         }
         
         String receipt = "\nReceipt:\nTime of sale: " + sale.getSaleTime().toLocalDate() + " " + sale.getSaleTime().toLocalTime() + "\n\n";
-        for (Map.Entry<ItemDTO, Integer> entry : sale.getItems().entrySet()) {
+        for (Map.Entry<ItemDTO, Integer> entry : sale.getSaleItems().getItems().entrySet()) {
             ItemDTO item = entry.getKey();
             int count = entry.getValue();
             receipt += item.getName() + " " + count + " x " + item.getPrice() + " " + (item.getPrice() * count) + "\n";

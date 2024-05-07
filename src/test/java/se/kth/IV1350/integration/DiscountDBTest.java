@@ -6,6 +6,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 import se.kth.IV1350.dto.ItemDTO;
+import se.kth.IV1350.dto.SaleDTO;
 
 public class DiscountDBTest {
     DiscountDB ddb;
@@ -22,13 +23,13 @@ public class DiscountDBTest {
 
     @Test
     public void testGetDiscount() {
-        double discount = ddb.getDiscount("felix", new HashMap<ItemDTO, Integer>());
+        double discount = ddb.getDiscount("felix", new SaleDTO(new HashMap<ItemDTO, Integer>()));
         assertTrue("Discount not retrieved", discount > 0);
     }
 
     @Test
     public void testInvalidCustomerIdGetDiscount() {
-        double discount = ddb.getDiscount("test", new HashMap<ItemDTO, Integer>());
+        double discount = ddb.getDiscount("test", new SaleDTO(new HashMap<ItemDTO, Integer>()));
         assertTrue("Discount was retrieved but should not have been", discount == 0);
     }
 }

@@ -47,7 +47,7 @@ public class SaleTest {
     @Test
     public void testAddItemToEmptyList() {
         sale.addItem(new ItemDTO("test", "test", "test", 1, 0.5), 2);
-        Map.Entry<ItemDTO, Integer> entry = sale.getItems().entrySet().iterator().next();
+        Map.Entry<ItemDTO, Integer> entry = sale.getSaleItems().getItems().entrySet().iterator().next();
         assertTrue("Item not added",  
             entry.getKey().getItemId() == "test" && 
             entry.getKey().getName() == "test" && 
@@ -62,7 +62,7 @@ public class SaleTest {
     public void testAddEqualItem() {
         sale.addItem(new ItemDTO("test", "test", "test", 1, 0.5), 2);
         sale.addItem(new ItemDTO("test", "test", "test", 1, 0.5), 1);
-        Map.Entry<ItemDTO, Integer> entry = sale.getItems().entrySet().iterator().next();
+        Map.Entry<ItemDTO, Integer> entry = sale.getSaleItems().getItems().entrySet().iterator().next();
         assertTrue("Item not updated",  
             entry.getKey().getItemId() == "test" && 
             entry.getKey().getName() == "test" && 
